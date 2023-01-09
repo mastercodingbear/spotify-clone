@@ -1,0 +1,34 @@
+.user_actions_area
+    background: var(--bg_color_1)
+    display: inline-flex
+    align-items: center
+    padding: .3rem
+    border-radius: 1000px
+    .logout_btn
+        padding: 0 .5rem
+        a
+            color: var(--text-color)
+            svg
+                width: 20px
+                height: 20px
+                color: var(--bs-gray-500)
+    .user_profile_btn
+        text-align: left !important
+        display: flex
+        align-items: center
+        color: var(--text-color)
+        span
+            line-height: 15px
+            margin-left: 0.5rem
+            font-size: 11px
+            max-width: 90px
+        .user_avatar
+            display: grid
+            place-items: center
+            border-radius: 50%
+            width: 36px
+            height: 36px
+            border: 2px solid var(--bs-gray-500)
+            img
+                object-fit: cover
+                border-radius: 50%

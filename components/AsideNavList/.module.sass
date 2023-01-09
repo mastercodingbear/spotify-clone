@@ -1,0 +1,43 @@
+@import '../../styles/variables'
+.app_navigation
+    .app_navigation_list
+        list-style: none
+        padding: 0
+        margin: 0
+        &::-webkit-scrollbar
+            display: none
+        .app_nav_item
+            position: relative
+            margin: .2rem 0
+            .app_nav_link
+                all: unset
+                cursor: pointer
+                display: flex
+                align-items: center
+                font-size: 12px
+                text-transform: capitalize
+                padding: 8px 16px
+                border-radius: 1000px
+                span
+                    margin-left: .5rem
+                svg
+                    width: 22px
+                    height: 22px
+            &.active
+                color: #fff
+                svg path 
+                    stroke: #fff
+                &::after
+                    content: ''
+                    position: absolute
+                    top: 0
+                    bottom: 0
+                    left: 0
+                    height: 100%
+                    width: 4px
+                    background: $main-color
+                .app_nav_link
+                    background: $gradient_1
+        .list_divider
+            margin: 0.6rem 0
+            background: $gradient_1

@@ -1,0 +1,79 @@
+@import '../../styles/variables'
+.app_landing_wrapper
+    height: 100vh
+    display: flex
+    flex-direction: column
+    background: var(--bg_color)
+    overflow: hidden
+    overflow-y: scroll
+    &::-webkit-scrollbar
+        display: none
+    .hero_wrapper
+        height: 100%
+        display: flex
+        align-items: center
+    .connect_me
+        margin-top: 3rem
+        p
+            font-size: 11px
+            color: var(--bs-gray-600)
+            max-width: 320px
+        ul
+            margin: 0
+            margin-bottom: 1rem
+            list-style: none
+            padding: 0
+            display: flex
+            li
+                margin-right: 1rem
+            a
+                font-size: 22px
+                color: var(--text-color) !important
+    .app_mode_toggle_btn
+        all: unset
+        cursor: pointer
+        margin-left: 1.5rem
+        svg
+            width: 22px
+            height: 22px
+    .logo_app_link
+    .nav_list
+        z-index: 2
+        width: 100%
+        margin: 0 1rem !important
+        list-style: none
+        display: flex
+        align-items: center
+        justify-content: space-between
+        a
+            color: var(--text-color)
+            text-transform: capitalize
+            font-weight: 600
+    .hero_head
+        font-weight: 800
+        font-size: 3rem
+    .login_cta_btn_styled
+        border: 0
+        outline: none
+        display: inline-flex
+        color: #fff !important
+        border-radius: 100px
+        padding: 12px 32px
+        text-transform: capitalize
+        background: $main-color
+        &:hover
+            background: $gradient_2
+    .spotify_icon
+        // overflow: hidden
+        max-height: 500px
+        display: flex
+        align-items: center
+        justify-content: center
+        // position: relative
+        svg
+            // display: none
+            width: 400px
+            height: 400px
+            color: $main-color
+            // transform: rotate(-30deg) translateY(-50%)
+    

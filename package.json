@@ -1,0 +1,39 @@
+{
+  "name": "spotify-clone-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@blazity/next-image-proxy": "^1.0.2",
+    "axios": "^0.26.1",
+    "bootstrap": "^5.1.3",
+    "debounce": "^1.2.1",
+    "dotenv": "^16.0.0",
+    "fast-average-color": "^7.1.0",
+    "moment": "^2.29.1",
+    "next": "12.1.0",
+    "next-themes": "^0.1.1",
+    "node-sass": "^7.0.1",
+    "randomcolor": "^0.6.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "react-input-range": "^1.3.0",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2",
+    "redux-thunk": "^2.4.1",
+    "swiper": "^8.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "eslint": "8.11.0",
+    "eslint-config-next": "12.1.0",
+    "find-cache-dir": "^3.3.2",
+    "typescript": "^4.9.4"
+  }
+}

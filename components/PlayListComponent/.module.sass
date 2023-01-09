@@ -1,0 +1,94 @@
+@import '../../styles/variables'
+
+.playlist_component_styled
+    display: flex
+    flex-direction: column
+    margin: 1.25rem 0
+    padding: 15px
+    background: var(--bg_color_3)
+    border-radius: 6px
+    min-height: 190px
+    box-shadow: 1px 1px 10px #00000015
+    &:hover
+        background: var(--bg_color_4)
+        .playlist_cover_wrapper
+            .playlist_play_pause_btn_container
+                visibility: visible !important
+                bottom: 10px !important
+            &.circled
+                .playlist_play_pause_btn_container
+                    bottom: 0px !important
+    a
+        color: var(--text-color)
+    .playlist_cover_wrapper
+        box-shadow: 1px 1px 10px #00000025
+        background: var(--bg_color_2)
+        width: 100%
+        min-height: 158px
+        border-radius: 6px
+        margin-bottom: 1.25rem
+        position: relative
+        img
+            overflow: hidden
+            border-radius: 6px !important
+        &.circled
+            align-self: center
+            max-width: 158px
+            max-height: 122px !important
+            border-radius: 50%
+            justify-content: center
+            align-items: center
+            img
+                border-radius: 50% !important
+            .playlist_play_pause_btn_container
+                &.isPlaying
+                    bottom: 0 !important
+        .playlist_cover_link
+            width: 100% !important
+            min-height: 100% !important
+            img
+                user-select: none !important
+                pointer-events: none !important
+        .playlist_play_pause_btn_container
+            z-index: 2
+            position: absolute
+            border: 0
+            bottom: 0
+            right: 10px
+            visibility: hidden
+            transition: bottom .3s linear
+            &.isPlaying
+                visibility: visible !important
+                bottom: 10px !important
+    .playlist_title
+        overflow: hidden
+        display: -webkit-box
+        -webkit-line-clamp: 1
+        -webkit-box-orient: vertical
+    .playlist_overview
+        margin: 0
+        color: #B3B3B3
+        font-size: 12px
+        overflow: hidden
+        display: -webkit-box
+        -webkit-line-clamp: 2
+        -webkit-box-orient: vertical
+        min-height: 38px
+    .skelton_placeholder
+        width: 100px
+        background: var(--bg_color_2)
+        height: 12px
+        display: block
+        box-shadow: 1px 1px 2px #00000015
+@media screen and ( min-width:1366px  )
+    .col_xxl_2_5
+        width: 20%
+@media screen and ( max-width: 991px )
+    .playlist_component_styled
+        .playlist_cover_wrapper
+            .playlist_play_pause_btn_container
+                visibility: visible !important
+                bottom: 10px !important
+            &.circled
+                .playlist_play_pause_btn_container
+                    bottom: 0px !important

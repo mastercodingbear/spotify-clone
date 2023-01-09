@@ -1,0 +1,29 @@
+@import '../../styles/variables'
+.range_input_wrapper
+    > div > div
+        background: #80808041
+        > div 
+            background: var(--bs-gray-600)
+            background: $gradient_3
+        > span > div
+            border: 0
+            background: var(--text_color)
+            transform: scale(.75) !important
+    &:hover
+        > div > div
+            > div 
+                background: $gradient_3
+            > span > div
+                visibility: visible
+@media screen and ( min-width: 991px )
+    .range_input_wrapper
+        > div > div
+            > div 
+                background: var(--text_color)
+            > span > div
+                visibility: hidden
+    
+
+
+    
+

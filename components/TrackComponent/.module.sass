@@ -1,0 +1,77 @@
+@import '../../styles/variables'
+.track_component_row
+    border-radius: 5px
+    color: var(--bs-gray-600)
+    .play_pause_btn
+        color: var(--text_color) !important
+        display: none
+    &:hover
+        .track_index_num
+            display: none
+        .play_pause_btn
+            display: inline-block !important
+            button
+                background: transparent
+                box-shadow: none
+                svg
+                    transform: 0
+                    margin: 0 !important
+                    width: 30px
+                    height: 30px
+                    color: var(--text_color)
+        background: var(--bg_color_4)
+        .track_artist_link,.track_album_link,.track_added_at_date,.track_index
+            color: var(--text_color) !important
+    &.is_playing
+        background: var(--bg_color_4)
+        .track_artist_link,.track_album_link,.track_added_at_date,.track_index
+            color: var(--text_color) !important
+        .track_name,.track_index
+            color: $main-color !important
+    .track_index
+        min-width: 30px
+        font-weight: 600
+    .track_title
+        display: inline-flex
+        justify-content: space-between
+        align-items: center
+        .track_cover_wrapper
+            display: grid
+            place-items: center
+            box-shadow: 1px 1px 5px #00000020
+            background: var(--bg_color_4)
+            height: 40px !important
+            width: 40px !important
+        .track_name_artist
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            .track_name
+                overflow: hidden
+                display: -webkit-box
+                -webkit-line-clamp: 1
+                -webkit-box-orient: vertical
+                color: var(--text_color)
+                font-weight: 500
+    ._playlist_placeholder,
+    .icon_playlist_placeholder
+        box-shadow: 1px 1px 5px #00000020
+        display: inline-flex
+        background: var(--bg_color_4)
+        height: 14px
+        width: 100px
+    .icon_playlist_placeholder
+        display: inline-flex
+        width: 14px
+    .track_artist_link,
+    .track_album_link
+        display: inline-flex
+        color: var(--bs-gray-600)
+        &:not(:last-of-type)
+            margin-right: 5px
+            &::after
+                content: ', '
+    .track_artist_link  
+        font-size: 12px
+            
+

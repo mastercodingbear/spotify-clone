@@ -1,0 +1,24 @@
+@import '../../styles/variables'
+.container
+    padding-left: 16px
+    padding-right: 16px
+    width: 100%
+    max-width: 1440px
+.actions_top_bar
+    z-index: 7
+    display: flex
+    align-items: center
+    transition: .3s
+    height: 95px
+    margin-bottom: -95px
+    background: transparent
+    position: sticky
+    &.stick_top
+        top: 0
+        height: 75px
+        background: var(--bg_color_1)
+        box-shadow: 1px 1px 5px #00000015
+@media screen and ( min-width: 575px )
+    .container
+        padding-left: 32px
+        padding-right: 32px

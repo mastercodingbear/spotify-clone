@@ -1,0 +1,116 @@
+@import '../../styles/variables'
+.app_main_area
+    overflow: hidden !important
+    width: 100vw !important
+    height: 100vh !important
+    display: flex !important
+    flex-direction: column !important
+    .app_main_top_section
+        z-index: 1
+        display: flex
+        height: calc( 100vh - 90px )
+        position: relative
+        .app_main_sidebar
+            box-shadow: 1px 1px 5px #00000015
+            overflow: hidden
+            overflow-y: scroll
+            &::-webkit-scrollbar
+                display: none
+            width: 90px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            background: var(--bg_color)
+            transition: $aside_transition
+            z-index: 2
+        .app_main_func_container
+            scroll-behavior: smooth
+            z-index: 1
+            width: calc( 100% - 90px)
+            background: var(--bg_color_2)
+            overflow-y: scroll
+            &::-webkit-scrollbar
+                display: none
+                width: 5px
+            &::-webkit-scrollbar-track
+                background: var(--bg_color_1)
+            &::-webkit-scrollbar-thumb
+                background: var(--bs-gray-400)
+            .container
+                padding-left: 32px
+                padding-right: 32px
+                width: 100%
+                max-width: 1440px
+                .scroll_top_btn
+                    all: unset
+                    background: var(--bg_color_4)
+                    color: var(--text_color)
+                    box-shadow: 1px 1px 10px #0000002f
+                    width: 36px
+                    height: 36px
+                    display: grid
+                    place-items: center
+                    border-radius: 4px
+                    cursor: pointer
+                    position: fixed
+                    right: 32px
+                    bottom: 122px
+                    z-index: 10
+                    animation: toTop .5s
+                    svg
+                        width: 18px
+                        height: 18px
+                    &:hover
+                        background: $main-color
+                        color: #fff
+                .loading_more_spinner
+                    display: flex
+                    justify-content: center
+                    align-content: center
+                    text-align: center
+                    .grow_spinner
+                        margin-bottom: 2rem
+    .app_main_bottom_section
+        z-index: 2
+        box-shadow: 1px 1px 5px #00000015
+        background: var(--bg_color_1);
+        height: 90px !important
+        position: fixed
+        left: 0
+        bottom: 0
+        width: 100%
+.aside_open
+    .app_main_sidebar
+        transition: 0s !important
+        width: 240px !important
+    .app_main_func_container
+        width: calc( 100% - 240px) !important
+
+@keyframes toTop
+    0%
+        bottom: 80px
+    100%
+        bottom: 122px
+        
+
+@media screen and ( max-width: 991px )
+    .app_main_area
+        .app_main_top_section
+            .app_main_sidebar
+                width: 70px !important
+            .app_main_func_container
+                width: calc( 100% - 70px) !important
+@media screen and ( max-width: 575px )
+    .app_main_area
+        .app_main_top_section
+            .app_main_sidebar
+                width: 60px !important
+            .app_main_func_container
+                width: calc( 100% - 60px) !important
+                .container
+                    padding-left: 16px
+                    padding-right: 16px
+                    .scroll_top_btn
+                        right: 16px
+
+    

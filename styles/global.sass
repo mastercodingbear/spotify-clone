@@ -1,0 +1,45 @@
+@import './variables'
+
+*,
+*::after,
+*::before
+    padding: 0
+    margin: 0
+
+//  LIGHT AND DARK MODE SETTINGS
+html[data-theme='dark']
+    --text_color: #fff
+    --bg_color: #0a0a0a
+    --bg_color_1: #0b0b0b
+    --bg_color_2: #0d0d0d
+    --bg_color_3: #151515
+    --bg_color_4: #202020
+html[data-theme='light']
+    --text_color: #121212
+    --bg_color: #fff
+    --bg_color_1: #fefefe
+    --bg_color_2: #f2f2f2
+    --bg_color_3: #fefefe
+    --bg_color_4: #fff
+
+
+body
+    font-size: $f-size
+    font-family: $f-family-main,$f-family-secondary
+    font-weight: $f-weight
+    color: var(--text_color)
+    background: var(--bg_color)
+    overflow: hidden
+a
+    text-decoration: none
+.app_svg_path
+    fill: var(--text_color)
+.app_svg_path_stroke
+    stroke: var(--text_color)
+.container
+    padding-left: 18px
+    padding-right: 18px
+    margin: 0 auto
+    max-width: 1440px
+.swiper-button-disabled
+    display: none !important

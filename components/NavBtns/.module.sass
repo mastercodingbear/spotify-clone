@@ -1,0 +1,21 @@
+.app_nav_btns_container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    .app_nav_btn
+        all: unset
+        cursor: pointer
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 0.4rem
+        padding-right: 1.5rem
+        padding-left: 0
+        svg
+            margin-right: .5rem
+            display: block
+            width: 24px
+            height: 24px
+        &:disabled
+            opacity: 0.3
+            cursor: not-allowed

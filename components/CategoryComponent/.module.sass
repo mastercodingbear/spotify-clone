@@ -1,0 +1,48 @@
+@import '../../styles/variables'
+.category_component_styled
+    height: 195px
+    overflow: hidden
+    position: relative
+    margin: 1.25rem 0
+    padding: 24px 20px
+    color: #fff
+    background: var(--bg_color_1)
+    text-transform: capitalize
+    border-radius: 8px
+    box-shadow: 1px 1px 10px #00000015
+    .category_name
+        font-size: 1.25rem
+        width: 70%
+        line-height: 0
+        font-weight: 700
+        text-shadow: 1px 1px 2px #00000080
+        // color: var(--text_color)
+    .category_name_placeholder
+        background: var(--bg_color_2)
+        box-shadow: 11px 1px 10px #00000018
+        display: block
+        height: 1rem
+        width: 130px
+    .category_cover_img_wrapper
+        background: var(--bg_color_2)
+        position: absolute
+        right: 0
+        bottom: 0
+        width: 110px
+        height: 110px
+        transform: rotate(30deg) translate(20px,0px)
+        box-shadow: -1px -1px 10px #00000035
+    &.size_large
+        height: 220px
+        .category_cover_img_wrapper
+            width: 140px
+            height: 140px
+            transform: rotate(30deg) translate(25px,0px)
+        .category_name_placeholder
+            width: 220px
+        .category_name
+            font-size: 2.25rem
+            line-height: 2rem
+@media screen and ( min-width:1366px  )
+    .col_xxl_2_5
+        width: 20%
