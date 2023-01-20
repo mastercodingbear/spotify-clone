@@ -104,15 +104,6 @@ export default function LandingPage() {
                     <a
                       target={"_blank"}
                       rel="noreferrer noopener"
-                      href="https://www.linkedin.com/in/ren-yoshida"
-                    >
-                      <AiFillLinkedin />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      target={"_blank"}
-                      rel="noreferrer noopener"
                       href="https://join.skype.com/invite/JmNrWxIrLmAO"
                     >
                       <AiFillSkype />
@@ -126,15 +117,6 @@ export default function LandingPage() {
                       href="https://github.com/mastercodingbear"
                     >
                       <AiFillGithub />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      target={"_blank"}
-                      rel="noreferrer noopener"
-                      href="https://bluelotus.vercel.app"
-                    >
-                      <AiOutlineGlobal />
                     </a>
                   </li>
                 </ul>
